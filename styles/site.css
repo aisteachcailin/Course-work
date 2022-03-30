@@ -1,0 +1,420 @@
+@font-face {
+    font-family: Huntsman;
+    src: url('../fonts/Huntsman.otf');
+}
+
+@font-face {
+    font-family: Exo;
+    src: url('../fonts/Exo.otf');
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans.ttf');
+}
+
+body, html {
+    background-color: #000;
+    color: #5e5e5e;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%; 
+}
+
+.all {
+    min-height: calc(100vh - 250px - 100px);
+    background-color: #abedde;
+}
+
+.all td {
+    padding: 10px;
+    font-size: 20px;
+}
+
+span {
+    color: #86ffe3;
+}
+
+--------------------------------/*HEADER*/--------------------------------
+
+/*navbar*/
+
+.navbar-brand {
+    font-size: 30px;
+}
+ .nav-item {
+    font-size: 20px;
+    display: inline;
+    white-space: nowrap;
+ }
+
+ .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+ /*navbar*/
+
+ /*searching form*/
+
+.btn-outline-success {
+    color: #86ffe3;
+    border: 0.5px solid #86ffe3;
+}
+
+.btn-outline-success:hover {
+    color: #000;
+    background: #86ffe3;
+    border: 0.5px solid #86ffe3;
+}
+ /*searching form*/
+--------------------------------/*HEADER*/--------------------------------
+
+/*footer*/
+.footer {
+  background-color: #000;
+  height: 250px;
+  width: 100%;
+}
+
+.footer h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 3px;
+    padding: 20px;
+}
+.footer h4:hover {
+    color: #cccccc;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.footer a, .footer li {
+    color: #cccccc;
+}
+.footer a:hover {
+    color: #86ffe3;
+}
+
+
+.footer li a{
+    display: block;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+
+}
+/*footer*/
+
+
+/* -------------------- НАЧАЛО стилей для главной страницы --------------------- */
+
+/*carousel*/
+
+.my-carousel {
+    padding: 0;
+}
+
+.my-carousel .carousel-item img{
+    object-fit: cover;
+    max-height: 750px;
+    width: 100%;
+
+}
+h5 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#mainTextWrap {
+    width: 100%;
+    float: left;
+}
+
+#mainText {
+    width: 1100px;
+    margin: 40px auto;
+    text-align: justify;
+}
+
+
+@media all and (min-width: 1500px) {
+    #promo {
+        height: 800px;
+    }
+}
+
+/* ----------------- КОНЕЦ стилей для главной страницы ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для главной страницы магазниа ---------------------- */
+
+#shopWrap {
+    width: 100%;
+    float: left;
+}
+
+.shopUnitShortAge{
+
+}
+
+.btn-outline-info {
+    color: #86ffe3;
+    border: 0.5px solid #86ffe3;
+}
+
+.btn-outline-info:hover {
+    color: #86ffe3;
+    background: #000;
+    border: 0.5px solid #86ffe3;
+}
+
+.shopUnit {
+    float: left;
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+    padding-bottom: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.shopUnitName {
+    color: #fff4ca;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Exo, sans-serif;
+    font-size: 1.2em;
+    max-height: 20px;
+}
+
+.shopUnitShortDescr {
+    color: #9b9d9e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align:  left;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.shopUnit img {
+    width: 100%;
+    height: 200px;
+}
+
+.shopUnitShortDaytime {
+    color: #fff;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.shopUnitPrice {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: #c6b47d;
+    font-weight: bold;
+}
+
+.shopUnitPrice img {
+    height: 50px;
+    width: 55px;
+}
+
+.shopUnitMore {
+    border-radius: 3px;
+    transition: all .8s;
+    padding: 5px 15px;
+    background-color: #86ffe3;
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin-top: 45px;
+
+}
+
+.shopUnitMore:hover {
+    color: #fff;
+    background-color: #000;
+    border: 0.5px solid #fff;
+}
+
+.shopUnitShortAge {
+    margin: 10px;
+}
+
+.main {
+    display: flex;
+    background-color: #000;
+}
+
+.genre {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left_nav img {
+    width: 45%;
+    height: 75px;
+}
+
+.left_nav h1 {
+    font-size: 45px;
+    color: #fff;
+    padding: 20px;
+}
+
+.left_nav li{
+    color: #000;
+}
+.left_nav li a{
+     font-size: 20px;
+     margin-bottom: 20px;
+     padding: 15px;
+     color: #fff;
+}
+
+.left_nav a:hover{
+    color: #86ffe3;
+}
+
+.selecter{
+    width: 250px;
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    border: 0.5px solid #fff;
+}
+
+.forma {
+    display: inline-flex;
+    width: 400px;
+    text-align-last: center;
+}
+/* ------------------ КОНЕЦ стилей для главной старницы магазина -------------------------- */
+
+/* ---------------- НАЧАЛО стилей для страницы с открытым товаром ----------------------- */
+
+#openedProduct-img {
+    float: left;
+    width: 25%;
+    margin-right: 3%;
+}
+
+#openedProduct-img img {
+    width: 40vw;
+    height: 60vh;
+    padding: 50px;
+    
+}
+
+#openedProduct-content {
+    float: left;
+    width: 50vw;
+    margin-left: 200px;
+}
+
+#openedProduct-name {
+    color: #fff4ca;
+    font-family: Exo, sans-serif;
+    font-size: 50px;
+    padding: 20px;
+
+}
+
+#openedProduct-descr {
+    margin-top: 20px;
+    color: #fff4ca;
+}
+#openedProduct-daytime {
+    color: #fff;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#openedProduct-price {
+    margin-top: 10px;
+    color: #c6b47d;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#openedProduct-age {
+    margin: 10px;
+}
+#openedProduct-price img {
+    height: 50px;
+    width: 55px;
+}
+.add_to_cart{
+    background-color: #86ffe3;
+    color: #000;
+    width: 120px; 
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px;
+    border-radius: 3px;
+    transition: all .8s;
+    padding: 5px 15px;
+ }
+
+.add_to_cart:hover {
+    color: #fff;
+    background-color: #000;
+    border: 0.5px solid #fff;
+}
+
+#form1 {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    text-align: center;
+}
+
+ #button_minus, #num_count, #button_plus{
+    border: none;
+    text-align: center;
+    font-size: 10px;
+    font-weight:bold;
+ }
+ .input-group {
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+    width: 150px;
+    border-radius: 3px; 
+    padding: 5px;
+    margin: 20px 0px;
+
+ }
+
+
+
+/* ---------------- КОНЕЦ стилей для страниы с открытым товаром -------------------------- */
+
